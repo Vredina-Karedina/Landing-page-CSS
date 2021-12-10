@@ -28,57 +28,50 @@ body {
 
 .information,
 .invitation,
-.citation-text {
+.citation-content p {
     color: #1f2937;
 }
 
 button,
-.intro-main-text,
-.invitation-main-text {
+.intro-text-block b,
+.invitation-content b {
     color: #f9faf8;
 }
 
 .header-links a,
-.intro-secondary-text,
-.invitation-secondary-text,
+.intro-text-block p,
+.invitation-content p,
 .footer {
     color: #e5e7eb;
 }
 
 /*----------------- Fonts and text decorations-----------------*/
 
-.intro-main-text {
+.intro-text-block b {
     font-size: 48px;
-    font-weight: extra-bold;
     line-height: 0.9em;
 }
 
 .header-links a,
-.intro-secondary-text,
+.intro-text-block p,
 .info-box p,
 .invitation-content,
 .footer {
     font-size: 18px;
 }
 
-.info-head {
+.information-content b {
     font-size: 28px;
-    font-weight: bold;
 }
 
-.citation-text {
+.citation-content p {
     font-style: italic;
     font-weight: lighter;
     font-size: 26px;
 }
 
-.author {
+.citation-content b {
     font-size: 20px;
-    font-weight: bold;
-}
-
-.invitation-main-text {
-    font-weight: bolder;
 }
 
 a {
@@ -107,13 +100,14 @@ button {
 
 .header img,
 .footer img {
+    margin-right: 20px;
     height: 50px;
     width: auto;
 }
 
 .introduction img {
-    height: auto;
-    width: 400px;
+    height: 200px;
+    width: auto;
 }
 
 .information img {
@@ -137,12 +131,9 @@ button {
 }
 
 .header,
-.introduction {
-    width: 750px;
-}
-
+.introduction,
 .invitation-content {
-    max-width: 750px;
+    width: 750px;
 }
 
 .boxes,
@@ -151,14 +142,24 @@ button {
 }
 
 .header,
-.introduction,
+.footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.introduction {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
 .information,
 .citation,
-.invitation,
-.footer {
-    padding-top: 30px;
-    padding-bottom: 30px;
+.invitation {
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
+
+
 
 /*--------------Header block--------------*/
 
@@ -179,15 +180,22 @@ button {
     gap: 40px;
 }
 
-.introduction{
+.introduction {
     display: flex;
-    align-items: center;
 }
 
 .intro-text-block {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    justify-content: space-between;
+}
+
+.intro-text-block p {
+    margin: 0;
+}
+
+.intro-text-block button {
+    margin-top: 10px;
 }
 
 /*--------------Information block--------------*/
@@ -205,15 +213,16 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-.info-head {
-    margin: 30px;
+    margin-top: 40px;
 }
 
 .info-box {
     width: 140px;
     height: auto;
+}
+
+.info-box p {
+    margin: 0em;
 }
 
 /*--------------Citation block--------------*/
@@ -225,13 +234,14 @@ button {
     justify-content: center;
 }
 
-.citation-content {
-    height: auto;
+.citation-content p {
+    margin: 0em;
 }
 
-.author {
+.citation-content b {
     display: flex;
     justify-content: right;
+    margin: 0em;
 }
 
 /*--------------Invitation block--------------*/
@@ -248,7 +258,14 @@ button {
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    padding: 40px;
+    margin: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.invitation-content b,
+.invitation-content p {
+    margin: 0em;
 }
 
 /*--------------Footer--------------*/
