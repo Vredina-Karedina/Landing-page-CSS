@@ -1,0 +1,260 @@
+/*----------------- General styles -----------------*/
+
+body {
+    margin: 0;
+    background-color: #162025;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/*----------------- Colors -----------------*/
+
+.head,
+.footer {
+    background-color: #1f2937;
+}
+
+.citation {
+    background-color: #e5e7ebb0;
+}
+
+.information,
+.invitation {
+    background-color: #f9faf8;
+}
+
+.invitation-content {
+    background-color: #3382f6;
+}
+
+.information,
+.invitation,
+.citation-text {
+    color: #1f2937;
+}
+
+button,
+.intro-main-text,
+.invitation-main-text {
+    color: #f9faf8;
+}
+
+.header-links a,
+.intro-secondary-text,
+.invitation-secondary-text,
+.footer {
+    color: #e5e7eb;
+}
+
+/*----------------- Fonts and text decorations-----------------*/
+
+.intro-main-text {
+    font-size: 48px;
+    font-weight: extra-bold;
+    line-height: 0.9em;
+}
+
+.header-links a,
+.intro-secondary-text,
+.info-box p,
+.invitation-content,
+.footer {
+    font-size: 18px;
+}
+
+.info-head {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.citation-text {
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 26px;
+}
+
+.author {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.invitation-main-text {
+    font-weight: bolder;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*----------------- Buttons -----------------*/
+
+button {
+    height: 30px;
+    width: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #3382f6;
+    font-weight: bolder;
+}
+
+.invitation-content button {
+    border: 1px solid #f9faf8;
+    margin-left: 20px;
+}
+
+/*----------------- Images -----------------*/
+
+.header img,
+.footer img {
+    height: 50px;
+    width: auto;
+}
+
+.introduction img {
+    height: auto;
+    width: 400px;
+}
+
+.information img {
+    height: 140px;
+    width: auto;
+    border: 3px solid#3382f6;
+    border-radius: 10px;
+}
+
+
+/*----------------- Aligning elements on the page -----------------*/
+
+/*-------------- Common size settings --------------*/
+.body {
+    margin: auto;
+    height: 100vh;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header,
+.introduction {
+    width: 750px;
+}
+
+.invitation-content {
+    max-width: 750px;
+}
+
+.boxes,
+.citation-content {
+    width: 600px;
+}
+
+.header,
+.introduction,
+.information,
+.citation,
+.invitation,
+.footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/*--------------Header block--------------*/
+
+.head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-links {
+    display: flex;
+    gap: 40px;
+}
+
+.introduction{
+    display: flex;
+    align-items: center;
+}
+
+.intro-text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/*--------------Information block--------------*/
+
+.information {
+    display: flex;
+    flex: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info-head {
+    margin: 30px;
+}
+
+.info-box {
+    width: 140px;
+    height: auto;
+}
+
+/*--------------Citation block--------------*/
+
+.citation {
+    display: flex;
+    flex: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.citation-content {
+    height: auto;
+}
+
+.author {
+    display: flex;
+    justify-content: right;
+}
+
+/*--------------Invitation block--------------*/
+
+.invitation {
+    display: flex;
+    flex: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.invitation-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+/*--------------Footer--------------*/
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
